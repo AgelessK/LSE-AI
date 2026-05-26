@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 580" width="900" height="580" role="img" aria-labelledby="chart-title chart-desc">
+  <title id="chart-title">The verification floor</title>
+  <desc id="chart-desc">Two-axis line chart showing cost to automate (red, rising gradually with task complexity) and cost to verify (blue, rising sharply with task complexity). At current verification skill, the curves cross at task complexity around 4 — the current verification floor, beyond which verification cost dominates. With improved verification skill (dashed blue curve, much flatter), the curves cross at task complexity around 8 — the floor shifts substantially to the right. A curved arrow visualizes this shift. Better verification skill flattens the verification cost curve, expanding the band of task complexity where automation remains economically profitable.</desc>
+  
+  <style>
+    .axis-line { stroke: #444; stroke-width: 1; }
+    .grid-line { stroke: #ebe9e4; stroke-width: 0.5; }
+    .tick-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11px; fill: #666; }
+    .axis-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; fill: #333; }
+    .title-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 18px; font-weight: 500; fill: #1a1a1a; }
+    .subtitle-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; fill: #666; }
+    .legend-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 12px; fill: #333; }
+    .annotation { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11px; fill: #777; font-style: italic; }
+    .region-label-main { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; font-weight: 500; }
+    .region-label-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11px; font-style: italic; }
+    .floor-label-main { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 12px; font-weight: 500; }
+    .shift-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 12px; font-weight: 500; fill: #444441; }
+    .shift-label-sub { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11px; fill: #5F5E5A; font-style: italic; }
+  </style>
+  
+  <rect width="900" height="580" fill="#ffffff"/>
+  
+  <text x="450" y="32" text-anchor="middle" class="title-text">The verification floor</text>
+  <text x="450" y="54" text-anchor="middle" class="subtitle-text">Where AI-generated output stops being economically valuable</text>
+  
+  <rect x="130" y="95" width="230" height="325" fill="#1D9E75" fill-opacity="0.04"/>
+  <rect x="360" y="95" width="306.7" height="325" fill="#EF9F27" fill-opacity="0.05"/>
+  <rect x="666.7" y="95" width="153.3" height="325" fill="#E24B4A" fill-opacity="0.05"/>
+  
+  <line class="grid-line" x1="130" y1="100" x2="820" y2="100"/>
+  <line class="grid-line" x1="130" y1="165" x2="820" y2="165"/>
+  <line class="grid-line" x1="130" y1="230" x2="820" y2="230"/>
+  <line class="grid-line" x1="130" y1="295" x2="820" y2="295"/>
+  <line class="grid-line" x1="130" y1="360" x2="820" y2="360"/>
+  
+  <line class="grid-line" x1="206.7" y1="95" x2="206.7" y2="420"/>
+  <line class="grid-line" x1="283.3" y1="95" x2="283.3" y2="420"/>
+  <line class="grid-line" x1="436.7" y1="95" x2="436.7" y2="420"/>
+  <line class="grid-line" x1="513.3" y1="95" x2="513.3" y2="420"/>
+  <line class="grid-line" x1="590" y1="95" x2="590" y2="420"/>
+  <line class="grid-line" x1="743.3" y1="95" x2="743.3" y2="420"/>
+  
+  <line stroke="#A32D2D" stroke-width="1.5" stroke-dasharray="4,3" x1="360" y1="100" x2="360" y2="420"/>
+  <text x="360" y="86" text-anchor="middle" class="floor-label-main" fill="#A32D2D">Current floor</text>
+  <text x="360" y="436" text-anchor="middle" class="annotation" fill="#A32D2D">task complexity ≈ 4</text>
+  
+  <line stroke="#0F6E56" stroke-width="1.5" stroke-dasharray="4,3" x1="666.7" y1="100" x2="666.7" y2="420"/>
+  <text x="666.7" y="86" text-anchor="middle" class="floor-label-main" fill="#0F6E56">Floor with better verification</text>
+  <text x="666.7" y="436" text-anchor="middle" class="annotation" fill="#0F6E56">task complexity ≈ 8</text>
+  
+  <line class="axis-line" x1="130" y1="420" x2="820" y2="420"/>
+  <line class="axis-line" x1="130" y1="95" x2="130" y2="420"/>
+  
+  <text x="122" y="423" text-anchor="end" class="tick-label">0</text>
+  <text x="122" y="363" text-anchor="end" class="tick-label">50</text>
+  <text x="122" y="298" text-anchor="end" class="tick-label">100</text>
+  <text x="122" y="233" text-anchor="end" class="tick-label">150</text>
+  <text x="122" y="168" text-anchor="end" class="tick-label">200</text>
+  <text x="122" y="103" text-anchor="end" class="tick-label">250</text>
+  
+  <text x="130" y="455" text-anchor="middle" class="tick-label">1</text>
+  <text x="206.7" y="455" text-anchor="middle" class="tick-label">2</text>
+  <text x="283.3" y="455" text-anchor="middle" class="tick-label">3</text>
+  <text x="360" y="455" text-anchor="middle" class="tick-label">4</text>
+  <text x="436.7" y="455" text-anchor="middle" class="tick-label">5</text>
+  <text x="513.3" y="455" text-anchor="middle" class="tick-label">6</text>
+  <text x="590" y="455" text-anchor="middle" class="tick-label">7</text>
+  <text x="666.7" y="455" text-anchor="middle" class="tick-label">8</text>
+  <text x="743.3" y="455" text-anchor="middle" class="tick-label">9</text>
+  <text x="820" y="455" text-anchor="middle" class="tick-label">10</text>
+  
+  <text x="475" y="479" text-anchor="middle" class="axis-label">Task complexity (1 = trivial, 10 = novel/critical)</text>
+  <text x="42" y="257" text-anchor="middle" class="axis-label" transform="rotate(-90 42 257)">Cost (illustrative units)</text>
+  
+  <path fill="none" stroke="#E24B4A" stroke-width="3" d="M 130,414.8 L 206.7,412.2 L 283.3,408.3 L 360,403.1 L 436.7,396.6 L 513.3,388.8 L 590,379.7 L 666.7,369.3 L 743.3,357.6 L 820,344.6"/>
+  
+  <path fill="none" stroke="#378ADD" stroke-width="3" d="M 130,417.4 L 206.7,414.8 L 283.3,409.6 L 360,401.8 L 436.7,391.4 L 513.3,374.5 L 590,348.5 L 666.7,309.5 L 743.3,251 L 820,160"/>
+  
+  <path fill="none" stroke="#378ADD" stroke-width="2.5" stroke-dasharray="7,4" d="M 130,418.7 L 206.7,417.4 L 283.3,414.8 L 360,410.9 L 436.7,404.4 L 513.3,396.6 L 590,384.9 L 666.7,369.3 L 743.3,348.5 L 820,316"/>
+  
+  <g fill="#E24B4A">
+    <circle cx="130" cy="414.8" r="3.5"/>
+    <circle cx="206.7" cy="412.2" r="3.5"/>
+    <circle cx="283.3" cy="408.3" r="3.5"/>
+    <circle cx="360" cy="403.1" r="3.5"/>
+    <circle cx="436.7" cy="396.6" r="3.5"/>
+    <circle cx="513.3" cy="388.8" r="3.5"/>
+    <circle cx="590" cy="379.7" r="3.5"/>
+    <circle cx="666.7" cy="369.3" r="3.5"/>
+    <circle cx="743.3" cy="357.6" r="3.5"/>
+    <circle cx="820" cy="344.6" r="3.5"/>
+  </g>
+  
+  <g fill="#378ADD">
+    <circle cx="130" cy="417.4" r="3.5"/>
+    <circle cx="206.7" cy="414.8" r="3.5"/>
+    <circle cx="283.3" cy="409.6" r="3.5"/>
+    <circle cx="360" cy="401.8" r="3.5"/>
+    <circle cx="436.7" cy="391.4" r="3.5"/>
+    <circle cx="513.3" cy="374.5" r="3.5"/>
+    <circle cx="590" cy="348.5" r="3.5"/>
+    <circle cx="666.7" cy="309.5" r="3.5"/>
+    <circle cx="743.3" cy="251" r="3.5"/>
+    <circle cx="820" cy="160" r="3.5"/>
+  </g>
+  
+  <circle cx="360" cy="402" r="6.5" fill="none" stroke="#A32D2D" stroke-width="2"/>
+  <circle cx="666.7" cy="369.3" r="6.5" fill="none" stroke="#0F6E56" stroke-width="2"/>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#444441"/>
+    </marker>
+  </defs>
+  <path fill="none" stroke="#444441" stroke-width="2" d="M 372 396 Q 513 320 654 363" marker-end="url(#arrowhead)"/>
+  <text x="513" y="305" text-anchor="middle" class="shift-label">Better verification skill flattens the curve</text>
+  <text x="513" y="320" text-anchor="middle" class="shift-label-sub">floor shifts right — wider band of profitable automation</text>
+  
+  <text x="220" y="245" class="region-label-main" fill="#0F6E56">Automation</text>
+  <text x="220" y="261" class="region-label-main" fill="#0F6E56">profitable</text>
+  <text x="220" y="278" class="region-label-sub" fill="#0F6E56">verifiable share is high</text>
+  
+  <text x="745" y="210" class="region-label-main" fill="#A32D2D" text-anchor="middle">Verification cost</text>
+  <text x="745" y="226" class="region-label-main" fill="#A32D2D" text-anchor="middle">dominates</text>
+  <text x="745" y="243" class="region-label-sub" fill="#A32D2D" text-anchor="middle">AI loses economic value</text>
+  
+  <g transform="translate(155, 510)">
+    <line x1="0" y1="0" x2="28" y2="0" stroke="#E24B4A" stroke-width="3"/>
+    <circle cx="14" cy="0" r="3.5" fill="#E24B4A"/>
+    <text x="36" y="4" class="legend-text">Cost to automate</text>
+    
+    <line x1="180" y1="0" x2="208" y2="0" stroke="#378ADD" stroke-width="3"/>
+    <circle cx="194" cy="0" r="3.5" fill="#378ADD"/>
+    <text x="216" y="4" class="legend-text">Cost to verify (current skill)</text>
+    
+    <line x1="430" y1="0" x2="458" y2="0" stroke="#378ADD" stroke-width="2.5" stroke-dasharray="7,4"/>
+    <text x="466" y="4" class="legend-text">Cost to verify (with improved skill)</text>
+  </g>
+  
+  <text x="450" y="554" text-anchor="middle" class="annotation">Illustrative. Catalini, Hui &amp; Wu (2026) name this the Measurability Gap. Verification investment compounds; the floor shifts with verification skill,</text>
+  <text x="450" y="568" text-anchor="middle" class="annotation">not with model capability alone — the framework's central claim about where AI value durably lives.</text>
+</svg>

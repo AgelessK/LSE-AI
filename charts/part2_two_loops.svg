@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" role="img" aria-labelledby="diagram-title diagram-desc">
+  <title id="diagram-title">The two-loop governance architecture</title>
+  <desc id="diagram-desc">Vertical stack of three levels: User need, business strategy, and environment at top; How the system should work (shared mental model, system intent) in the middle; How the system actually works (runtime reality) at the bottom. Two bidirectional loops between adjacent levels. Loop 2 is Intent Alignment — calibrating the should-work model against user need and business strategy, served by OKRs, product reviews, customer feedback, and build-measure-learn cycles. Loop 1 is System Understanding — calibrating the should-work model against actual runtime behavior, served by tests, observability, code review, debugging, and post-mortems. Both loops ideally run continuously; AI as intelligence substrate participates in both — modeling system behavior alongside humans in Loop 1, and measuring and synthesizing user, market, and business signals in Loop 2.</desc>
+  
+  <style>
+    .title-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 18px; font-weight: 500; fill: #1a1a1a; }
+    .subtitle-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; fill: #666; }
+    .box-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 14px; font-weight: 500; letter-spacing: 0.6px; }
+    .box-subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 12px; }
+    .loop-name-line { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; fill: #1a1a1a; font-weight: 500; }
+    .loop-question { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 12px; fill: #555; }
+    .loop-practices { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11px; fill: #888; font-style: italic; }
+    .arrow { stroke-width: 1.5; fill: none; }
+    .footer-note { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11px; fill: #6a6a6a; font-style: italic; }
+  </style>
+  
+  <rect width="900" height="500" fill="#ffffff"/>
+  
+  <text x="450" y="32" text-anchor="middle" class="title-text">The two-loop governance architecture</text>
+  <text x="450" y="54" text-anchor="middle" class="subtitle-text">System intent is the pivot — continuously calibrated against reality below and need above</text>
+  
+  <g transform="translate(125, 80)">
+    <rect width="650" height="60" rx="8" fill="#EEEDFE" stroke="#AFA9EC" stroke-width="0.5"/>
+    <text x="20" y="25" class="box-title" fill="#3C3489">USER NEED · BUSINESS STRATEGY · ENVIRONMENT</text>
+    <text x="20" y="46" class="box-subtitle" fill="#534AB7">evolving needs, market signals, strategic priorities, competitive and regulatory reality</text>
+  </g>
+  
+  <g transform="translate(145, 158)">
+    <path class="arrow" d="M 0 44 L 0 0 L -4 5 M 0 0 L 4 5" stroke="#444"/>
+    <path class="arrow" d="M 10 0 L 10 44 L 6 39 M 10 44 L 14 39" stroke="#444"/>
+    <text x="30" y="10" class="loop-name-line">Loop 2 — Intent Alignment</text>
+    <text x="30" y="27" class="loop-question">Does the should-work model still align with evolving user need and business strategy?</text>
+    <text x="30" y="43" class="loop-practices">Served by OKRs, product reviews, customer feedback, build-measure-learn cycles</text>
+  </g>
+  
+  <g transform="translate(125, 220)">
+    <rect width="650" height="60" rx="8" fill="#E1F5EE" stroke="#5DCAA5" stroke-width="0.5"/>
+    <text x="20" y="25" class="box-title" fill="#085041">HOW THE SYSTEM SHOULD WORK</text>
+    <text x="20" y="46" class="box-subtitle" fill="#0F6E56">shared mental model and intent — captured in specs, ADRs, tests, contracts</text>
+  </g>
+  
+  <g transform="translate(145, 298)">
+    <path class="arrow" d="M 0 44 L 0 0 L -4 5 M 0 0 L 4 5" stroke="#444"/>
+    <path class="arrow" d="M 10 0 L 10 44 L 6 39 M 10 44 L 14 39" stroke="#444"/>
+    <text x="30" y="10" class="loop-name-line">Loop 1 — System Understanding</text>
+    <text x="30" y="27" class="loop-question">Does the should-work model match how the system actually works?</text>
+    <text x="30" y="43" class="loop-practices">Served by tests, observability, code review, debugging, post-mortems</text>
+  </g>
+  
+  <g transform="translate(125, 360)">
+    <rect width="650" height="60" rx="8" fill="#E6F1FB" stroke="#85B7EB" stroke-width="0.5"/>
+    <text x="20" y="25" class="box-title" fill="#0C447C">HOW THE SYSTEM ACTUALLY WORKS</text>
+    <text x="20" y="46" class="box-subtitle" fill="#185FA5">runtime behavior, observed reality, what users actually experience</text>
+  </g>
+  
+  <text x="450" y="450" text-anchor="middle" class="footer-note">Both loops ideally run continuously. AI as intelligence substrate participates in both — modeling system behavior alongside humans in Loop 1,</text>
+  <text x="450" y="466" text-anchor="middle" class="footer-note">measuring and synthesizing user, market, and business signals in Loop 2 at cadences continuous calibration finally makes feasible.</text>
+</svg>

@@ -1,0 +1,35 @@
+# LaTeX build artifacts (if pandoc generates intermediate .tex files)
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# Editor backups and temporary files
+*~
+*.swp
+*.swo
+*.bak
+.DS_Store
+Thumbs.db
+
+# Python (for any build scripts)
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Pandoc intermediate files
+*.tex.bak
+
+# OS / IDE
+.vscode/
+.idea/
+*.iml
