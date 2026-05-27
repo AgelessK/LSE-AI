@@ -4,7 +4,7 @@
 
 ---
 
-Parts 1-3 built the framework. Lehman's eight laws describe an architecture: five structural invariants of E-type systems (Laws 2, 3, 4, 5, 7), and three prescriptive laws (1, 6, 8) that mandate the multi-level multi-loop multi-agent feedback structure required to respect those invariants. Earlier parts argued that AI does not break these invariants — it accelerates the rate at which their consequences become visible. The volume of value creation is bounded by conservation laws. Density of value extracted from that bounded volume is the only available lever, and only conditionally accessible through governance discipline applied at every loop level.
+Parts 1-3 built the framework. Lehman's eight laws describe an architecture: five structural regularities of E-type systems (Laws 2, 3, 4, 5, 7), and three prescriptive laws (1, 6, 8) that mandate the multi-level multi-loop multi-agent feedback structure required to respect those regularities. Earlier parts argued that AI does not repeal these regularities — it accelerates the rate at which their consequences become visible. The volume of value creation is predicted to be bounded by conservation tendencies. Density of value extracted from that bounded volume is, on the framework's account, the available lever, and only conditionally accessible through governance discipline applied at every loop level.
 
 That argument was theoretical when written. The empirical record is being written now, in real time, by organizations betting on different ways to capture AI value at the organizational level. As of mid-2026, at least five distinct organizational theses are in flight — each making a different bet about how AI changes (or doesn't change) the fundamental architecture Lehman described.
 
@@ -24,7 +24,7 @@ The bets are genuinely distinct — not different participants in the same exper
 
 **5. Augmentation mandate.** Keep the existing org structure. Mandate AI proficiency across all roles. Improve density without restructuring. **Shopify** and **Duolingo** have both publicly committed to this path.
 
-These bets test different framework predictions. Block tests whether AI can be the Law 8 multi-agent feedback substrate architecturally. Cloudflare tests whether AI can be that substrate structurally, via role elimination. Klarna and Salesforce test whether full replacement of customer-facing functions can outrun the verification floor. AI-native startups test whether inception-level AI structure escapes the conservation laws or just delays them. Shopify and Duolingo test whether augmentation alone produces compounding density gains.
+These bets test different framework predictions. Block tests whether AI can be the Law 8 multi-agent feedback substrate architecturally. Cloudflare tests whether AI can be that substrate structurally, via role elimination. Klarna and Salesforce test whether full replacement of customer-facing functions can outrun the verification floor. AI-native startups test whether inception-level AI structure escapes the conservation tendencies or just delays their binding. Shopify and Duolingo test whether augmentation alone produces compounding density gains.
 
 The framework predicts different outcomes for each. The empirical record will determine whether those predictions hold.
 
@@ -107,13 +107,13 @@ Time-to-scale is similarly compressed. Cursor reached $100M ARR in roughly 1 yea
 
 Tomasz Tunguz frames the structural advantage in communication-channel terms. A traditional 150-person organization with four hierarchical layers creates roughly 11,175 potential communication channels. An AI-enabled team producing equivalent output with 30 people creates roughly 435 channels — a 96% reduction in coordination overhead.
 
-The framework reading is uncertain in an interesting way. The conservation laws operate at the level of E-type systems and the organizations evolving them. Laws 4 and 5 (Conservation of Organizational Stability, Conservation of Familiarity) describe properties that emerge at organizational scale. The question is whether AI-native startups at 20-50 employees are operating below the scale at which conservation effects bind, or whether they are genuinely escaping the conservation dynamics through structural redesign.
+The framework reading is uncertain in an interesting way. The conservation tendencies operate at the level of E-type systems and the organizations evolving them. Laws 4 and 5 (Conservation of Organizational Stability, Conservation of Familiarity) describe properties that emerge at organizational scale. The question is whether AI-native startups at 20-50 employees are operating below the scale at which conservation effects bind, whether they are genuinely escaping the conservation dynamics through structural redesign, or whether the conservation tendencies bind less tightly than Lehman's data suggested — a possibility the social-science framing of the laws explicitly allows.
 
 The honest answer is that we do not yet know. Two interpretations are tenable.
 
-**The "conservation laws scale" interpretation:** these companies are extracting genuine density gains because they were built around the AI-native operating model from inception. They will encounter conservation dynamics as they scale, but from a higher density baseline. Their revenue-per-employee will compress as they reach 500-1000 employees, but not back to traditional SaaS levels.
+**The "conservation tendencies scale" interpretation:** these companies are extracting genuine density gains because they were built around the AI-native operating model from inception. They will encounter conservation dynamics as they scale, but from a higher density baseline. Their revenue-per-employee will compress as they reach 500-1000 employees, but not back to traditional SaaS levels.
 
-**The "conservation laws bind" interpretation:** these companies are operating below the scale at which Lehman's empirical observations were derived. As they scale to the OS/360-equivalent size that generated Lehman's data, the same conservation dynamics will emerge. The current revenue-per-employee figures are early-stage artifacts that will compress significantly.
+**The "conservation tendencies bind" interpretation:** these companies are operating below the scale at which Lehman's empirical observations were derived. As they scale to the OS/360-equivalent size that generated Lehman's data, the same conservation dynamics will likely emerge. The current revenue-per-employee figures may be early-stage artifacts that will compress significantly.
 
 The framework's prediction is closer to the first interpretation but cannot rule out the second. The empirical test is concrete: watch what happens when these companies scale from 50 to 500 to 5000 employees. Anthropic at roughly 4,300 employees is the closest current test — and revenue per employee remains in the multi-million range, which suggests the AI-native structure does sustain density gains at meaningful scale.
 
@@ -129,7 +129,7 @@ The fifth thesis is the closest to the framework's recommended path. Keep the ex
 
 Tensions have emerged. Duolingo initially evaluated employees on AI usage as part of performance reviews. After employee pushback, von Ahn backtracked, saying performance should be judged on doing the job "as well as possible" with AI as one tool among others, not as a metric in itself. The tension is between mandating proficiency (which the framework supports) and measuring proficiency-for-its-own-sake (which can distort behavior).
 
-Read through Lehman, the augmentation thesis is the path Parts 1-3 implicitly recommended. It respects all the structural invariants. It treats AI as a density multiplier on bounded organizational activity rather than as a volume substitute. It pairs proficiency with governance — Shopify's "AI first, headcount second" is a governance rule, not just a proficiency mandate.
+Read through Lehman, the augmentation thesis is the path Parts 1-3 implicitly recommended. It respects all the structural regularities. It treats AI as a density multiplier on bounded organizational activity rather than as a volume substitute. It pairs proficiency with governance — Shopify's "AI first, headcount second" is a governance rule, not just a proficiency mandate.
 
 The framework predicts the augmentation path should produce compounding density gains in the four ratios (value per activity, per time, per capital, per person) without the verification-floor risk that replacement strategies carry. It is the lowest-variance bet in the dataset — and likely the highest-probability-of-success path.
 
@@ -141,13 +141,13 @@ The Duolingo tension is instructive. The instinct to measure AI proficiency as a
 
 The five bets are not equally likely to succeed. The framework sorts them into three tiers.
 
-**Most likely to compound:** Augmentation (Shopify, Duolingo) and AI-native from inception (Cursor, Anthropic, Mercor). Both respect the conservation laws and the verification floor — improving density within bounded activity in one case, operating at structurally lower coordination overhead in the other. The framework predicts both paths compound durably.
+**Most likely to compound:** Augmentation (Shopify, Duolingo) and AI-native from inception (Cursor, Anthropic, Mercor). Both respect the conservation tendencies and the verification floor — improving density within bounded activity in one case, operating at structurally lower coordination overhead in the other. The framework predicts both paths compound durably.
 
 **Conditional on execution:** Architectural substitution (Block). Succeeds if the world model stays accurate at the rate of business change; fails if world model maintenance becomes the new bottleneck — the same Lehman dynamic relocated to a different layer. High variance, high upside.
 
-**Higher inversion risk:** Role elimination (Cloudflare) and full replacement (Klarna, Salesforce). Both rely on existing AI tools substituting for human verification at scale. Klarna and Salesforce have already produced partial empirical confirmation that this runs ahead of the verification floor. Cloudflare's bet is the harder version of the same test — AI substituting for the broader coordination function, not just verification.
+**Higher inversion risk:** Role elimination (Cloudflare) and full replacement (Klarna, Salesforce). Both rely on existing AI tools substituting for human verification at scale. Klarna and Salesforce have publicly partially reversed their replacement bets (Klarna fully, Salesforce partially), which is consistent with the framework's prediction that running ahead of the verification floor inverts. The honest caveat: organizational reversals like these can have multiple plausible causes — overhiring during the prior cycle, integration friction with retained staff, regulatory or customer pressure, executive turnover, generic execution problems — and the publicly available evidence is press coverage and CEO statements rather than controlled studies. The pattern is consistent with the framework; the causal claim that the verification floor specifically drove the reversals would require evidence that does not yet exist. Cloudflare's bet is the harder version of the same test — AI substituting for the broader coordination function, not just verification.
 
-The pattern: bets that respect the verification floor and the conservation laws compound. Bets that ignore them — particularly when scaling up before the verification capacity scales — invert.
+The pattern: bets that respect the verification floor and the conservation tendencies compound. Bets that ignore them — particularly when scaling up before the verification capacity scales — invert.
 
 This is not a critique of the bold bets. Block's substitution may succeed in ways augmentation cannot. Cloudflare's elimination may pay off if its tooling investments compensate for the eliminated human capacity. But the base-case prediction, weighted by what the empirical record has shown so far, favors augmentation-and-AI-native over role-elimination-and-replacement.
 
@@ -193,17 +193,17 @@ The framework's predictions are falsifiable. Concrete empirical signals will det
 
 One further consideration deserves to be named for future work. As software itself becomes agentic — taking actions in the world, making decisions, executing goals without continuous human authorization — the framework may need extension. Lehman's laws were derived from software as artifact; agentic software is software as actor. Feedback loops compress further when deployed agents produce environmental changes that feed back into their own requirements faster than human-mediated systems can absorb. The comprehension bandwidth Law 5 names becomes harder to define when systems make decisions humans do not oversee.
 
-Whether agentic software requires quantitative compression of the existing framework or qualitatively new structural invariants is an open question. The series stops at the boundary where built software meets the framework. What lies beyond is where the next synthesis will need to begin.
+Whether agentic software requires quantitative compression of the existing framework or qualitatively new structural regularities is an open question. The series stops at the boundary where built software meets the framework. What lies beyond is where the next synthesis will need to begin.
 
 ## Closing
 
-The series' argument was theoretical when written. It synthesized Lehman's 50-year-old laws with the 2024-2026 empirical record on AI coding agents and concluded that AI does not break the structural invariants — it accelerates the rate at which their consequences become visible.
+The series' argument was theoretical when written. It synthesized Lehman's 50-year-old laws with the 2024-2026 empirical record on AI coding agents and argued that AI does not break the structural regularities — it accelerates the rate at which their consequences become visible.
 
 The five bets examined here are different theories about what to do with that conclusion. Block bets on rebuilding the architecture. Cloudflare bets on removing the humans. Klarna and Salesforce bet on full replacement and partially walked it back. AI-native startups bet on never building the legacy structure in the first place. Shopify and Duolingo bet on augmenting the structure that already exists.
 
 The framework predicts differential outcomes. Not all bets are equally informed by Lehman. The empirical record in 2026-2028 will sort them out.
 
-The pattern emerging from the current data: bets that respect the verification floor and the conservation laws compound. Bets that ignore them invert. Klarna and Salesforce demonstrate the inversion pattern in operational terms. Cursor and Anthropic demonstrate the compounding pattern at AI-native scale. Shopify and Duolingo demonstrate the slower, lower-variance compounding pattern at incumbent scale. Block and Cloudflare are still pending.
+The pattern emerging from the current data: bets that respect the verification floor and the conservation tendencies compound. Bets that ignore them invert. Klarna and Salesforce demonstrate the inversion pattern in operational terms. Cursor and Anthropic demonstrate the compounding pattern at AI-native scale. Shopify and Duolingo demonstrate the slower, lower-variance compounding pattern at incumbent scale. Block and Cloudflare are still pending.
 
 Three predictions follow that the next two to three years will adjudicate.
 

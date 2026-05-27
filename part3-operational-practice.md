@@ -4,7 +4,7 @@
 
 ---
 
-[Part 1](part1-laws-and-empirical-record.md) diagnosed the AI coding paradox through Lehman's five structural invariants, with Level 2 spec governance as the operational answer at the code-spec boundary. [Part 2](part2-framework.md) extended this to the two-loop architecture (Laws 1, 6, 8) — Loop 1 calibrating system understanding against runtime reality, Loop 2 calibrating intent against evolving user need and business strategy — and established that two conservation constraints bound the volume of value creation. AI multiplies density per unit of bounded activity rather than volume, lifting four ratios when governance is in place.
+[Part 1](part1-laws-and-empirical-record.md) diagnosed the AI coding paradox through Lehman's five structural regularities, with Level 2 spec governance as the operational answer at the code-spec boundary. [Part 2](part2-framework.md) extended this to the two-loop architecture (Laws 1, 6, 8) — Loop 1 calibrating system understanding against runtime reality, Loop 2 calibrating intent against evolving user need and business strategy — and established that two conservation constraints bound the volume of value creation. AI multiplies density per unit of bounded activity rather than volume, lifting four ratios when governance is in place.
 
 This part is the practical companion. Given the framework, what does an organization actually do — at each loop, on each ratio — to convert the structural opportunity into compounding value-density gains. The answer is not a single playbook. It is a set of disciplines applied at two distinct levels of the system, calibrated to where the organization currently is.
 
@@ -12,7 +12,7 @@ This part is the practical companion. Given the framework, what does an organiza
 
 The single most consequential practical change is reframing what gets measured. Most organizational AI maturity dashboards measure proficiency proxies — tool adoption rates, percentage of code AI-generated, PRs merged per developer, feature velocity. Under Lehman conservation, these are the wrong metrics. Activity volume is bounded; reporting it as a productivity gain confuses redistribution for improvement.
 
-Each of the four ratios has a practical operationalization:
+Each of the four ratios has known operational proxies. These are starting points for organizations to build their own value-density measurement, not a ready-to-deploy dashboard. The framework's claim is that these are the right things to triangulate; the work of stitching them into actionable measurement is the organization's, and is itself one of the under-observed durable bets Part 4 identifies (verification infrastructure includes measurement infrastructure).
 
 **Value per unit activity** is the hardest to measure directly but the most important. Proxies: defect rates per PR (lower density of bugs per PR = higher value density); rework rate (PRs that survive without follow-up correction); architectural decisions traceable to documented intent versus drift; time-to-resolution on incidents tied to specific subsystems. None of these are perfect. Together they triangulate.
 
@@ -22,7 +22,7 @@ Each of the four ratios has a practical operationalization:
 
 **Value per person involved** depends on whether the strategy is workforce reduction or workforce repurposing. The ratio improves under either; the organizational implications differ profoundly. Be explicit about which path the organization is on.
 
-Without reframed metrics, every other practical step is invisible. Volume metrics actively obscure the dimensions where AI helps.
+Without reframed metrics, every other practical step is invisible. Volume metrics actively obscure the dimensions where AI helps. But also: the proxies above remain proxies. The honest organizational stance is to instrument the proxies, watch them over time, and treat the measurement program itself as engineering work that compounds — exactly the verification-infrastructure pattern Part 4 names as a durable bet. The framework gives you the right dimensions to track. Building the measurement that converts those dimensions into operationally useful signals is the organization's own engineering investment, and one that the empirical record suggests very few organizations have made yet.
 
 ## Governance at Loop 1: System Understanding
 
@@ -69,6 +69,8 @@ The governance work above sets up the conditions for ratio improvement. The actu
 There is a constraint underneath all four ratios that the series has only implied: value density only rises to the extent that AI's output is actually verified and absorbed. Unverifiable output doesn't carry value regardless of how much agent activity produced it.
 
 The formalization comes from a recent paper by Catalini, Hui, and Wu (MIT / Washington University / UCLA, February 2026). They model the transition to advanced AI as the collision of two cost curves: a Cost to Automate that falls exponentially with compute and accumulated knowledge, and a Cost to Verify that is "biologically bottlenecked" — bounded by human time and embodied experience. The asymmetry creates what they call a Measurability Gap: a widening difference between what AI can execute and what humans can afford to verify. The verifiable share of agent output (s_v in their notation) is what separates truly productive output from merely plausible output.
+
+A scope note. Catalini, Hui, and Wu's model operates at macroeconomic scale: it characterizes the transition where AI capability outruns human-bottlenecked verification across the economy as a whole. This paper applies their structural insight at organizational scale, which is a meaningful scope change. The intra-organizational verification floor described here, and the multi-surface refinement developed below, are analogical extensions of Catalini et al.'s framework, not derivations from it. They inherit the *direction* of the conclusion — that verification cost is the binding constraint where execution becomes cheap — but not the formal proof. The 2024-2026 organizational evidence (He et al.'s complexity accumulation, Liu et al.'s debt persistence, Faros's review-time inflation, METR's experience reports) is consistent with the analogical extension; a formal model at organizational scale — measuring s_v inside teams, characterizing how it shifts with governance, calibrating where the floor sits for a given codebase — does not yet exist. Building that model is itself one of the verification-infrastructure durable bets Part 4 identifies.
 
 ![The verification floor: where AI-generated output stops being economically valuable, and how verification skill shifts that floor to the right](charts/part3_verification_floor.png)
 
@@ -144,7 +146,7 @@ The work above is too much to attempt all at once. The realistic question is wha
 
 ## The Discipline Is the Strategy
 
-The framework Lehman left in 1974 and refined through 1996 predicted everything the empirical record from 2024-2026 confirms. The volume of value creation through software is bounded by conservation laws that operate at the system and organizational level. The density of value extracted from that bounded volume is unbounded — but only conditionally accessible, through governance that respects the invariants and prescribes the structural architecture (the two loops) that those invariants require.
+The framework Lehman left in 1974 and refined through 1996 predicted patterns the empirical record from 2024-2026 is consistent with. The volume of value creation through software appears to be bounded by conservation tendencies that operate at the system and organizational level. The density of value extracted from that bounded volume is, on the framework's account, unbounded — but only conditionally accessible, through governance that respects the regularities and prescribes the structural architecture (the two loops) that those regularities require.
 
 AI does not change what good engineering looks like. It changes the cost of mediocre engineering. Under Lehman conservation, the only available offensive lever for productivity is accuracy — and accuracy at every loop level, sustained continuously, is what the practical disciplines in this part are for.
 
