@@ -36,7 +36,7 @@ Both loops ideally run continuously. Conventional wisdom puts them at different 
 
 Failure in either loop propagates into the other. A strategic pivot that doesn't update the shared model produces a perfectly faithful implementation of obsolete intent. A model that doesn't reflect runtime reality produces code that solves an imagined version of yesterday's problem.
 
-The structure has surface similarity to the DevOps infinity loop, but DevOps centers operational health (DORA metrics, deploy frequency, error rates) rather than spec-reality calibration. The disciplines that do calibrate — contract testing, property-based testing, SLO-based observability, BDD — exist as scattered point practices rather than as a coherent Loop 1. The framework names what they collectively serve.
+The structure has surface similarity to the DevOps infinity loop, but the resemblance is misleading: DevOps centers operational health (DORA metrics, deploy frequency, error rates) rather than spec-reality calibration. The disciplines that *do* calibrate — contract testing, property-based testing, SLO-based observability, BDD — exist as scattered point practices rather than as a coherent Loop 1. The framework's first novelty contribution, signposted in the introduction, is to identify what these point practices collectively serve: the multi-loop architecture Law 8 prescribed in 1996, which DevOps does not provide and which the practitioner literature has not yet named.
 
 ![The two-loop governance architecture, showing System Understanding (Loop 1) and Intent Alignment (Loop 2) with system intent as the pivot](charts/part2_two_loops.png)
 
