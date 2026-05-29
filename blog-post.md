@@ -63,15 +63,15 @@ The same survey caught the mood shifting between 2024 and 2026 — the share of 
 
 There is a structural irony worth naming here. The same technology that creates the drift problem — LLMs generating code faster than humans can verify it — is also the first technology that can check natural-language specifications against code. Until 2024, spec-conformance was a code-review job because there was no other way to do it. Now, for the first time, an LLM can read the spec, read the implementation, and flag the gap — early and unproven at scale, but real.
 
-Open tooling is already attacking it at different layers:
+Open tooling is already attacking it along the chain from intent to running system:
 
-- **Spec quality** — [deep requirement analysis](https://kiro.dev/blog/deep-spec-analysis/) (as in AWS's Kiro) tests whether the spec itself is sound.
-- **Spec-versus-code** — [spec-kit-canon](https://github.com/maximiliamus/spec-kit-canon) runs agents against a canonical spec to catch where the code has drifted from it.
-- **Behavior** — [property-based testing](https://kiro.dev/blog/property-based-testing/) exercises whether the running system behaves as the spec promises.
+- **Is the spec itself sound?** — [deep requirement analysis](https://kiro.dev/blog/deep-spec-analysis/) (as in AWS's Kiro) flags ambiguity, gaps, and contradictions before any code is generated.
+- **Does the code match the spec?** — [spec-kit-canon](https://github.com/maximiliamus/spec-kit-canon) checks a canonical spec against the code for drift, while [property-based testing](https://kiro.dev/blog/property-based-testing/) exercises whether the built system actually behaves as the spec promises — two complementary ways, static and behavioral, to check the same gap.
+- **Does the live system hold up?** — observability, anomaly detection, and regression oracles catch where production has drifted from expected behavior.
 
-Three surfaces, one payoff: machine-tractable checking where there used to be none.
+The shift is the same at every layer: detection that used to require a human now runs by machine. What it can't hand off is the *judgment* — deciding which side is wrong when a check fires, and what the failure means.
 
-The drift accelerator and the governance solution use the same primitive. Which means the verification floor — the point above which AI output stops being economically valuable because no one can check it — is no longer a fixed biological constraint. It is a moving threshold that verification investment can shift, at the surfaces where machine-tractable checking now applies.
+The drift accelerator and the governance solution, it turns out, are the same primitive. So the verification floor — the point above which AI output stops being economically valuable because no one can check it — is no longer fixed where human biology left it: every gain in machine-tractable detection pushes it outward, leaving more of what agents produce checkable. But it never disappears, because the judgment it rests on can't be automated away.
 
 Verification is only one of the two bottlenecks, and the other is drawing the same kind of attention. As implementation gets cheap, *agreeing on what to build* becomes the scarce step — the alignment problem. GitHub Next's ["Zero Alignment"](https://maggieappleton.com/zero-alignment) work (Maggie Appleton) is an early swing at it: pull planning, context, and agents into one shared space so intent is set before the agents run, not reverse-engineered after. Same pattern as verification — the constraint moves, and the tooling chases it.
 
