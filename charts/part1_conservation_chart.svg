@@ -1,129 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" role="img" aria-labelledby="chart-title chart-desc">
-  <title id="chart-title">Conservation of organizational activity over time</title>
-  <desc id="chart-desc">Line chart comparing organizational activity over 30 months across three configurations: Low Governance with High Proficiency (the He et al. spike-and-crash pattern), High Governance with High Proficiency (steady sustainable lift), and High Governance with Low Proficiency (stable slightly below baseline). All three converge toward the conservation level around index value 100, illustrating Lehman's Law 4.</desc>
-  
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 760" width="900" height="760" role="img" aria-labelledby="chart-title chart-desc">
+  <title id="chart-title">Raw activity rises for everyone; value diverges by governance</title>
+  <desc id="chart-desc">Two stacked line charts over 30 months from AI adoption, sharing an x-axis. Top panel: raw activity (PRs, commits, motion), indexed to a baseline of 100 — both high-proficiency configurations rise and stay high; the low-governance line stays high throughout. Bottom panel: value created (density), indexed to 100 — the low-governance/high-proficiency line spikes then crashes below baseline before clawing back toward it (the conserved effective rate), while the high-governance/high-proficiency line climbs to a sustained gain above baseline. The contrast — the red line high on top but low on the bottom — shows raw motion decoupling from delivered value: more work, less value, under ungoverned AI.</desc>
+
   <style>
     .axis-line { stroke: #444; stroke-width: 1; }
     .grid-line { stroke: #ebe9e4; stroke-width: 0.5; }
-    .grid-line-major { stroke: #d8d6d0; stroke-width: 0.5; }
     .tick-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11px; fill: #666; }
     .axis-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; fill: #333; }
+    .panel-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; font-weight: 600; fill: #1a1a1a; }
     .title-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 18px; font-weight: 500; fill: #1a1a1a; }
     .subtitle-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 13px; fill: #666; }
     .legend-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 12px; fill: #333; }
     .annotation-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-size: 11px; fill: #777; font-style: italic; }
     .data-line { fill: none; stroke-width: 2.5; }
     .conservation-line { fill: none; stroke: #999; stroke-width: 1; stroke-dasharray: 5,4; }
-    .point-marker { stroke-width: 1.5; }
+    .guide-line { fill: none; stroke: #cfcdc7; stroke-width: 1; stroke-dasharray: 3,3; }
   </style>
-  
-  <rect width="900" height="560" fill="#ffffff"/>
-  
-  <text x="450" y="32" text-anchor="middle" class="title-text">Conservation of organizational activity</text>
-  <text x="450" y="54" text-anchor="middle" class="subtitle-text">Different governance × proficiency configurations, same long-term equilibrium</text>
-  
-  <line class="grid-line" x1="100" y1="100" x2="820" y2="100"/>
-  <line class="grid-line" x1="100" y1="140" x2="820" y2="140"/>
-  <line class="grid-line" x1="100" y1="180" x2="820" y2="180"/>
-  <line class="grid-line" x1="100" y1="220" x2="820" y2="220"/>
-  <line class="grid-line-major" x1="100" y1="280" x2="820" y2="280"/>
-  <line class="grid-line" x1="100" y1="320" x2="820" y2="320"/>
-  <line class="grid-line" x1="100" y1="360" x2="820" y2="360"/>
-  <line class="grid-line" x1="100" y1="400" x2="820" y2="400"/>
-  
-  <line class="grid-line" x1="244" y1="100" x2="244" y2="440"/>
-  <line class="grid-line" x1="388" y1="100" x2="388" y2="440"/>
-  <line class="grid-line" x1="532" y1="100" x2="532" y2="440"/>
-  <line class="grid-line" x1="676" y1="100" x2="676" y2="440"/>
-  
-  <line class="conservation-line" x1="100" y1="280" x2="820" y2="280"/>
-  <text x="825" y="284" class="annotation-text">Conservation level (100)</text>
-  
-  <line class="axis-line" x1="100" y1="440" x2="820" y2="440"/>
-  <line class="axis-line" x1="100" y1="100" x2="100" y2="440"/>
-  
-  <text x="92" y="445" text-anchor="end" class="tick-label">60</text>
-  <text x="92" y="405" text-anchor="end" class="tick-label">70</text>
-  <text x="92" y="365" text-anchor="end" class="tick-label">80</text>
-  <text x="92" y="325" text-anchor="end" class="tick-label">90</text>
-  <text x="92" y="285" text-anchor="end" class="tick-label">100</text>
-  <text x="92" y="225" text-anchor="end" class="tick-label">115</text>
-  <text x="92" y="185" text-anchor="end" class="tick-label">125</text>
-  <text x="92" y="145" text-anchor="end" class="tick-label">135</text>
-  <text x="92" y="105" text-anchor="end" class="tick-label">145</text>
-  
-  <text x="100" y="460" text-anchor="middle" class="tick-label">0</text>
-  <text x="244" y="460" text-anchor="middle" class="tick-label">6</text>
-  <text x="388" y="460" text-anchor="middle" class="tick-label">12</text>
-  <text x="532" y="460" text-anchor="middle" class="tick-label">18</text>
-  <text x="676" y="460" text-anchor="middle" class="tick-label">24</text>
-  <text x="820" y="460" text-anchor="middle" class="tick-label">30</text>
-  
-  <text x="460" y="487" text-anchor="middle" class="axis-label">Months from AI adoption</text>
-  <text x="38" y="270" text-anchor="middle" class="axis-label" transform="rotate(-90 38 270)">Organizational activity (indexed, baseline = 100)</text>
-  
-  <path class="data-line" stroke="#E24B4A" d="M 100,280 L 172,128 L 244,100 L 316,168 L 388,272 L 460,352 L 532,380 L 604,352 L 676,320 L 748,300 L 820,288"/>
-  
-  <path class="data-line" stroke="#1D9E75" d="M 100,280 L 172,276 L 244,268 L 316,260 L 388,256 L 460,252 L 532,248 L 604,248 L 676,244 L 748,244 L 820,240"/>
-  
-  <path class="data-line" stroke="#378ADD" d="M 100,280 L 172,284 L 244,288 L 316,292 L 388,292 L 460,296 L 532,296 L 604,300 L 676,300 L 748,300 L 820,300"/>
-  
+
+  <rect width="900" height="760" fill="#ffffff"/>
+
+  <text x="450" y="30" text-anchor="middle" class="title-text">Raw activity rises for everyone; value diverges by governance</text>
+  <text x="450" y="52" text-anchor="middle" class="subtitle-text">Same AI adoption — the red line is high on top, low on the bottom: more motion, less delivered value</text>
+
+  <!-- vertical guide linking both panels at month 18 -->
+  <line class="guide-line" x1="536" y1="80" x2="536" y2="640"/>
+
+  <!-- ===== TOP PANEL: RAW ACTIVITY ===== -->
+  <text x="110" y="74" class="panel-title">Raw activity — PRs, commits, motion (indexed)</text>
+
+  <line class="grid-line" x1="110" y1="149" x2="820" y2="149"/>
+  <line class="grid-line" x1="110" y1="217" x2="820" y2="217"/>
+  <line class="grid-line" x1="252" y1="80" x2="252" y2="320"/>
+  <line class="grid-line" x1="394" y1="80" x2="394" y2="320"/>
+  <line class="grid-line" x1="536" y1="80" x2="536" y2="320"/>
+  <line class="grid-line" x1="678" y1="80" x2="678" y2="320"/>
+
+  <line class="conservation-line" x1="110" y1="285.7" x2="820" y2="285.7"/>
+
+  <line class="axis-line" x1="110" y1="320" x2="820" y2="320"/>
+  <line class="axis-line" x1="110" y1="80" x2="110" y2="320"/>
+
+  <text x="102" y="290" text-anchor="end" class="tick-label">100</text>
+  <text x="102" y="221" text-anchor="end" class="tick-label">120</text>
+  <text x="102" y="153" text-anchor="end" class="tick-label">140</text>
+  <text x="102" y="84" text-anchor="end" class="tick-label">160</text>
+  <text x="40" y="200" text-anchor="middle" class="axis-label" transform="rotate(-90 40 200)">Raw activity (indexed)</text>
+
+  <path class="data-line" stroke="#E24B4A" d="M 110,285.7 L 181,182.9 L 252,114.3 L 323,97.1 L 394,93.7 L 465,97.1 L 536,100.6 L 607,104.0 L 678,107.4 L 749,110.9 L 820,114.3"/>
+  <path class="data-line" stroke="#1D9E75" d="M 110,285.7 L 181,224.0 L 252,182.9 L 323,162.3 L 394,152.0 L 465,148.6 L 536,145.1 L 607,145.1 L 678,141.7 L 749,141.7 L 820,141.7"/>
+  <path class="data-line" stroke="#378ADD" d="M 110,285.7 L 181,275.4 L 252,268.6 L 323,265.1 L 394,261.7 L 465,261.7 L 536,258.3 L 607,258.3 L 678,258.3 L 749,258.3 L 820,258.3"/>
+
   <g fill="#E24B4A">
-    <circle cx="100" cy="280" r="3.5"/>
-    <circle cx="172" cy="128" r="3.5"/>
-    <circle cx="244" cy="100" r="3.5"/>
-    <circle cx="316" cy="168" r="3.5"/>
-    <circle cx="388" cy="272" r="3.5"/>
-    <circle cx="460" cy="352" r="3.5"/>
-    <circle cx="532" cy="380" r="3.5"/>
-    <circle cx="604" cy="352" r="3.5"/>
-    <circle cx="676" cy="320" r="3.5"/>
-    <circle cx="748" cy="300" r="3.5"/>
-    <circle cx="820" cy="288" r="3.5"/>
+    <circle cx="110" cy="285.7" r="3"/><circle cx="181" cy="182.9" r="3"/><circle cx="252" cy="114.3" r="3"/><circle cx="323" cy="97.1" r="3"/><circle cx="394" cy="93.7" r="3"/><circle cx="465" cy="97.1" r="3"/><circle cx="536" cy="100.6" r="3"/><circle cx="607" cy="104.0" r="3"/><circle cx="678" cy="107.4" r="3"/><circle cx="749" cy="110.9" r="3"/><circle cx="820" cy="114.3" r="3"/>
   </g>
-  
   <g fill="#1D9E75">
-    <circle cx="100" cy="280" r="3"/>
-    <circle cx="172" cy="276" r="3"/>
-    <circle cx="244" cy="268" r="3"/>
-    <circle cx="316" cy="260" r="3"/>
-    <circle cx="388" cy="256" r="3"/>
-    <circle cx="460" cy="252" r="3"/>
-    <circle cx="532" cy="248" r="3"/>
-    <circle cx="604" cy="248" r="3"/>
-    <circle cx="676" cy="244" r="3"/>
-    <circle cx="748" cy="244" r="3"/>
-    <circle cx="820" cy="240" r="3"/>
+    <circle cx="110" cy="285.7" r="3"/><circle cx="181" cy="224.0" r="3"/><circle cx="252" cy="182.9" r="3"/><circle cx="323" cy="162.3" r="3"/><circle cx="394" cy="152.0" r="3"/><circle cx="465" cy="148.6" r="3"/><circle cx="536" cy="145.1" r="3"/><circle cx="607" cy="145.1" r="3"/><circle cx="678" cy="141.7" r="3"/><circle cx="749" cy="141.7" r="3"/><circle cx="820" cy="141.7" r="3"/>
   </g>
-  
   <g fill="#378ADD">
-    <circle cx="100" cy="280" r="3"/>
-    <circle cx="172" cy="284" r="3"/>
-    <circle cx="244" cy="288" r="3"/>
-    <circle cx="316" cy="292" r="3"/>
-    <circle cx="388" cy="292" r="3"/>
-    <circle cx="460" cy="296" r="3"/>
-    <circle cx="532" cy="296" r="3"/>
-    <circle cx="604" cy="300" r="3"/>
-    <circle cx="676" cy="300" r="3"/>
-    <circle cx="748" cy="300" r="3"/>
-    <circle cx="820" cy="300" r="3"/>
+    <circle cx="110" cy="285.7" r="3"/><circle cx="181" cy="275.4" r="3"/><circle cx="252" cy="268.6" r="3"/><circle cx="323" cy="265.1" r="3"/><circle cx="394" cy="261.7" r="3"/><circle cx="465" cy="261.7" r="3"/><circle cx="536" cy="258.3" r="3"/><circle cx="607" cy="258.3" r="3"/><circle cx="678" cy="258.3" r="3"/><circle cx="749" cy="258.3" r="3"/><circle cx="820" cy="258.3" r="3"/>
   </g>
-  
-  <text x="252" y="92" class="annotation-text" fill="#A32D2D">Transient velocity gain</text>
-  <text x="540" y="395" class="annotation-text" fill="#A32D2D">Complexity debt overhang</text>
-  <text x="676" y="232" class="annotation-text" fill="#0F6E56">Sustainable density gain</text>
-  
-  <g transform="translate(140, 520)">
+
+  <text x="600" y="108" class="annotation-text" fill="#A32D2D">Generation stays high</text>
+  <text x="815" y="280" text-anchor="end" class="annotation-text">baseline (100)</text>
+
+  <!-- ===== INTER-PANEL NOTE ===== -->
+  <text x="465" y="364" text-anchor="middle" class="annotation-text">At month 18: raw effort still elevated (above) — but delivered value below baseline (below)</text>
+
+  <!-- ===== BOTTOM PANEL: VALUE / DENSITY ===== -->
+  <text x="110" y="394" class="panel-title">Value created / density (indexed)</text>
+
+  <line class="grid-line" x1="110" y1="427" x2="820" y2="427"/>
+  <line class="grid-line" x1="110" y1="480" x2="820" y2="480"/>
+  <line class="grid-line" x1="110" y1="587" x2="820" y2="587"/>
+  <line class="grid-line" x1="252" y1="400" x2="252" y2="640"/>
+  <line class="grid-line" x1="394" y1="400" x2="394" y2="640"/>
+  <line class="grid-line" x1="536" y1="400" x2="536" y2="640"/>
+  <line class="grid-line" x1="678" y1="400" x2="678" y2="640"/>
+
+  <line class="conservation-line" x1="110" y1="533.3" x2="820" y2="533.3"/>
+  <text x="815" y="527" text-anchor="end" class="annotation-text">Conserved effective rate (baseline)</text>
+
+  <line class="axis-line" x1="110" y1="640" x2="820" y2="640"/>
+  <line class="axis-line" x1="110" y1="400" x2="110" y2="640"/>
+
+  <text x="102" y="644" text-anchor="end" class="tick-label">60</text>
+  <text x="102" y="591" text-anchor="end" class="tick-label">80</text>
+  <text x="102" y="537" text-anchor="end" class="tick-label">100</text>
+  <text x="102" y="484" text-anchor="end" class="tick-label">120</text>
+  <text x="102" y="431" text-anchor="end" class="tick-label">140</text>
+  <text x="40" y="520" text-anchor="middle" class="axis-label" transform="rotate(-90 40 520)">Value / density (indexed)</text>
+
+  <path class="data-line" stroke="#E24B4A" d="M 110,533.3 L 181,422.7 L 252,402.4 L 323,452.0 L 394,527.5 L 465,585.6 L 536,606.1 L 607,585.6 L 678,562.4 L 749,548.0 L 820,539.2"/>
+  <path class="data-line" stroke="#1D9E75" d="M 110,533.3 L 181,530.7 L 252,525.3 L 323,520.0 L 394,517.3 L 465,512.0 L 536,509.3 L 607,509.3 L 678,506.7 L 749,506.7 L 820,504.0"/>
+  <path class="data-line" stroke="#378ADD" d="M 110,533.3 L 181,536.3 L 252,539.2 L 323,542.1 L 394,542.1 L 465,545.1 L 536,545.1 L 607,548.0 L 678,548.0 L 749,548.0 L 820,548.0"/>
+
+  <g fill="#E24B4A">
+    <circle cx="110" cy="533.3" r="3"/><circle cx="181" cy="422.7" r="3"/><circle cx="252" cy="402.4" r="3"/><circle cx="323" cy="452.0" r="3"/><circle cx="394" cy="527.5" r="3"/><circle cx="465" cy="585.6" r="3"/><circle cx="536" cy="606.1" r="3"/><circle cx="607" cy="585.6" r="3"/><circle cx="678" cy="562.4" r="3"/><circle cx="749" cy="548.0" r="3"/><circle cx="820" cy="539.2" r="3"/>
+  </g>
+  <g fill="#1D9E75">
+    <circle cx="110" cy="533.3" r="3"/><circle cx="181" cy="530.7" r="3"/><circle cx="252" cy="525.3" r="3"/><circle cx="323" cy="520.0" r="3"/><circle cx="394" cy="517.3" r="3"/><circle cx="465" cy="512.0" r="3"/><circle cx="536" cy="509.3" r="3"/><circle cx="607" cy="509.3" r="3"/><circle cx="678" cy="506.7" r="3"/><circle cx="749" cy="506.7" r="3"/><circle cx="820" cy="504.0" r="3"/>
+  </g>
+  <g fill="#378ADD">
+    <circle cx="110" cy="533.3" r="3"/><circle cx="181" cy="536.3" r="3"/><circle cx="252" cy="539.2" r="3"/><circle cx="323" cy="542.1" r="3"/><circle cx="394" cy="542.1" r="3"/><circle cx="465" cy="545.1" r="3"/><circle cx="536" cy="545.1" r="3"/><circle cx="607" cy="548.0" r="3"/><circle cx="678" cy="548.0" r="3"/><circle cx="749" cy="548.0" r="3"/><circle cx="820" cy="548.0" r="3"/>
+  </g>
+
+  <text x="245" y="397" class="annotation-text" fill="#A32D2D">Transient velocity gain</text>
+  <text x="540" y="624" class="annotation-text" fill="#A32D2D">Complexity debt overhang</text>
+  <text x="678" y="498" class="annotation-text" fill="#0F6E56">Sustainable density gain</text>
+
+  <!-- ===== SHARED X-AXIS ===== -->
+  <text x="110" y="660" text-anchor="middle" class="tick-label">0</text>
+  <text x="252" y="660" text-anchor="middle" class="tick-label">6</text>
+  <text x="394" y="660" text-anchor="middle" class="tick-label">12</text>
+  <text x="536" y="660" text-anchor="middle" class="tick-label">18</text>
+  <text x="678" y="660" text-anchor="middle" class="tick-label">24</text>
+  <text x="820" y="660" text-anchor="middle" class="tick-label">30</text>
+  <text x="465" y="686" text-anchor="middle" class="axis-label">Months from AI adoption</text>
+
+  <!-- ===== LEGEND ===== -->
+  <g transform="translate(140, 720)">
     <line x1="0" y1="0" x2="28" y2="0" stroke="#E24B4A" stroke-width="2.5"/>
     <circle cx="14" cy="0" r="3.5" fill="#E24B4A"/>
     <text x="36" y="4" class="legend-text">Low governance · High proficiency</text>
-    
+
     <line x1="232" y1="0" x2="260" y2="0" stroke="#1D9E75" stroke-width="2.5"/>
     <circle cx="246" cy="0" r="3" fill="#1D9E75"/>
     <text x="268" y="4" class="legend-text">High governance · High proficiency</text>
-    
+
     <line x1="467" y1="0" x2="495" y2="0" stroke="#378ADD" stroke-width="2.5"/>
     <circle cx="481" cy="0" r="3" fill="#378ADD"/>
     <text x="503" y="4" class="legend-text">High governance · Low proficiency</text>

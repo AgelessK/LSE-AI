@@ -33,3 +33,6 @@ venv/
 .vscode/
 .idea/
 *.iml
+
+# Local project memory / notes (not for publication)
+CLAUDE.local.md
