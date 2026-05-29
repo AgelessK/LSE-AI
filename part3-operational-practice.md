@@ -8,9 +8,9 @@
 
 This part is the practical companion. Given the framework, what does an organization actually do — at each loop, on each ratio — to convert the structural opportunity into compounding value-density gains. The answer is not a single playbook. It is a set of disciplines applied at two distinct levels of the system, calibrated to where the organization currently is.
 
-## First: Stop Measuring the Conserved Quantity
+## First: Stop Measuring Raw Volume
 
-The single most consequential practical change is reframing what gets measured. Most organizational AI maturity dashboards measure proficiency proxies — tool adoption rates, percentage of code AI-generated, PRs merged per developer, feature velocity. Under Lehman conservation, these are the wrong metrics. Activity volume is bounded; reporting it as a productivity gain confuses redistribution for improvement.
+The single most consequential practical change is reframing what gets measured. Most organizational AI maturity dashboards measure proficiency proxies — tool adoption rates, percentage of code AI-generated, PRs merged per developer, feature velocity. Under Lehman conservation, these are the wrong metrics: they track raw volume, which rises freely under AI while the effective, value-delivering rate stays bounded — so a climbing PR count reports redistribution, not improvement.
 
 Each of the four ratios has known operational proxies. These are starting points for organizations to build their own value-density measurement, not a ready-to-deploy dashboard. The framework's claim is that these are the right things to triangulate; the work of stitching them into actionable measurement is the organization's, and is itself one of the under-observed durable bets Part 4 identifies (verification infrastructure includes measurement infrastructure).
 
